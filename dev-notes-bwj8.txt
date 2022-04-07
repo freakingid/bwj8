@@ -3,7 +3,7 @@
 Test out the concept of the player ship having energy gems follow behind with a little lag.
 Energy gems result after a satellite piece has been obliterated.
 
-Create Room with space background
+DONE * Create Room with space background
 Create Ship sprite and object
 Create Energy gem sprite and object
 Give Ship controls so it can fly around
