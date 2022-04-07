@@ -4,10 +4,14 @@ Test out the concept of the player ship having energy gems follow behind with a 
 Energy gems result after a satellite piece has been obliterated.
 
 DONE * Create Room with space background
-Create Ship sprite and object
-Create Energy gem sprite and object
-Give Ship controls so it can fly around
-Position ship and gems in room
-Have ship check circle for collisions with gems
-Tell collided gems they are now being sucked in, so they can just have this STATE behavior in their Step event therafter.
-Possibly prioritize collided gems in order from closest to furthest, so each gem knows which gem is their parent they are supposed to get behind.
+DONE * Create Ship sprite and object
+DONE * Create Energy gem sprite and object
+DONE * Give Ship controls so it can fly around
+** Thrust, rotate CW, rotate CCW
+DONE * Position ship and gems in room
+
+TODO * Change ship thrust and direction so image_angle and direction of movement are unhinged.
+TODO * Have ship check circle for collisions with gems
+TODO * Tell collided gems they are now being sucked in, so they can just have this STATE behavior in their Step event therafter.
+TODO * Possibly prioritize collided gems in order from closest to furthest, so each gem knows which gem is their parent they are supposed to get behind.
+TODO * Make viewport / camera follow player
