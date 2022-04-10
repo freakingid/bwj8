@@ -10,8 +10,19 @@ DONE * Give Ship controls so it can fly around
 ** Thrust, rotate CW, rotate CCW
 DONE * Position ship and gems in room
 DONE * Change ship thrust and direction so image_angle and direction of movement are unhinged.
+DONE * Make viewport / camera follow player
 
 TODO * Have ship check circle for collisions with gems
+** Make list of the collided gems in the circle
+collision_circle_list(x1, y1, rad, obj, prec, notme, list, ordered);
+
 TODO * Tell collided gems they are now being sucked in, so they can just have this STATE behavior in their Step event therafter.
+BOOL is_captured
+or
+STATE captured, free, recycling, evil
+
 TODO * Possibly prioritize collided gems in order from closest to furthest, so each gem knows which gem is their parent they are supposed to get behind.
-TODO * Make viewport / camera follow player
+** list belonging to player, of captured gems.
+** captured_gems[] has their id's
+** each gem has ID of the object it is supposed to be following
+
