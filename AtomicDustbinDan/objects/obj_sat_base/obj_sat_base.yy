@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_ship_e",
-    "path": "sprites/spr_ship_e/spr_ship_e.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -28,11 +25,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "satellites",
+    "path": "folders/Objects/satellites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_sat_base",
   "tags": [],
   "resourceType": "GMObject",
 }

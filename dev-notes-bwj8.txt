@@ -12,6 +12,33 @@ DONE * Position ship and gems in room
 DONE * Change ship thrust and direction so image_angle and direction of movement are unhinged.
 DONE * Make viewport / camera follow player
 
+=========================
+DONE * Make some satellite sprites and objects
+DONE * Give satellites a parent
+DONE * Put all satellites in room
+DONE * Make satellites rotate
+DONE * Change room size
+1366 x 768 and now double that
+2732 x 1536
+** Some same-ratios:
+683 x 384
+
+WAIT * Make satellite pieces
+* First level of satellite being blasted by ship
+* This will probably be just one object, and the satellite will spawn the object with appropriate sprite whenever satellite is destroyed.
+
+TODO * Make player ship wrap
+* Event is in there, but doesn't seem to wrap??
+
+TODO * Make satellites wrap at edge of Room
+
+
+================================
+== Later
+================================
+* Consider making center of satellite sprites off a bit, so they rotate in a funny way suggesting they are decrepit.
+
+
 TODO * Have ship check circle for collisions with gems
 ** Make list of the collided gems in the circle
 collision_circle_list(x1, y1, rad, obj, prec, notme, list, ordered);
