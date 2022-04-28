@@ -29,6 +29,22 @@ if keyboard_check(vk_up)
 	vspeed = clamp(vspeed, -PLAYER_MAX_SPEED, PLAYER_MAX_SPEED);
 }
 
+// wrap
+// TODO this needs to be made DRY for more objects
+if (x > room_width + sprite_width) {
+	x = -sprite_width;
+} else if (x < -sprite_width) {
+	x = room_width + sprite_width;
+}
+
+if (y > room_height + sprite_height) {
+	y = -sprite_height;
+} else if (y < -sprite_height) {
+	y = room_height + sprite_height;
+}
+
+	
+
 // Now apply friction
 // funny, this will probably make us move backwards eventually?
 /*

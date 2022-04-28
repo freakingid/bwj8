@@ -23,6 +23,28 @@ DONE * Change room size
 ** Some same-ratios:
 683 x 384
 
+TODO * Write a screen wrap function that we can pass instance into.
+* Then call the function in player and satellite instance step events.
+* NOTE: for now we have this code duplicated in step event of player and satellite base objects.
+
+if (x > room_width + sprite_width) {
+	x = -sprite_width;
+} else if (x < -sprite_width) {
+	x = room_width + sprite_width;
+}
+
+if (y > room_height + sprite_height) {
+	y = -sprite_height;
+} else if (x < -sprite_height) {
+	y = room_height + sprite_height;
+}
+
+
+TODO * Set origins of satellite sprite pieces.
+* This will be done either at the beginning of the game, or when the satellite spawns the pieces object.
+* Do this with `sprite_set_offset();``
+`
+
 WAIT * Make satellite pieces
 * First level of satellite being blasted by ship
 * This will probably be just one object, and the satellite will spawn the object with appropriate sprite whenever satellite is destroyed.
