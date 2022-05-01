@@ -31,16 +31,16 @@ if keyboard_check(vk_up)
 
 // wrap
 // TODO this needs to be made DRY for more objects
-if (x > room_width + sprite_width) {
-	x = -sprite_width;
-} else if (x < -sprite_width) {
-	x = room_width + sprite_width;
+if (x > room_width) {
+	x = 0;
+} else if (x < 1) {
+	x = room_width;
 }
 
-if (y > room_height + sprite_height) {
-	y = -sprite_height;
-} else if (y < -sprite_height) {
-	y = room_height + sprite_height;
+if (y > room_height) {
+	y = 0;
+} else if (y < 1) {
+	y = room_height;
 }
 
 	

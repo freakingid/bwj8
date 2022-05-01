@@ -23,6 +23,16 @@ DONE * Change room size
 ** Some same-ratios:
 683 x 384
 
+DONE * Test current screen wrap to see if it is working.
+* removed the sprite_width / sprite_height addition to wrapping.
+
+TODO * Set origins of satellite sprite pieces.
+* This will be done either at the beginning of the game, or when the satellite spawns the pieces object.
+* Do this with `sprite_set_offset();``
+* Or maybe just do it in the IDE
+* We decided to do this in each satellite, so each is responsible for setting parameters and such of its own junk. That way when we add new satellites / if, each one is responsible for its own??
+NOTE: So far we only did this for cute and hubble. The method is not DRY, and is done in the .create event.
+
 TODO * Write a screen wrap function that we can pass instance into.
 * Then call the function in player and satellite instance step events.
 * NOTE: for now we have this code duplicated in step event of player and satellite base objects.
@@ -40,9 +50,6 @@ if (y > room_height + sprite_height) {
 }
 
 
-TODO * Set origins of satellite sprite pieces.
-* This will be done either at the beginning of the game, or when the satellite spawns the pieces object.
-* Do this with `sprite_set_offset();``
 `
 
 WAIT * Make satellite pieces
@@ -53,6 +60,21 @@ TODO * Make player ship wrap
 * Event is in there, but doesn't seem to wrap??
 
 TODO * Make satellites wrap at edge of Room
+
+TODO * Allow player ship to fire a missile
+* Spacebar for now
+
+TODO * Handle collision between missile and satellite
+* Satellite explodes, spawns pieces
+* missile gone
+
+TODO * Handle collision between player ship and satellite
+* Satellite explodes, spawns pieces
+* ship gone
+
+TODO * Respawn ship after destruction
+* Pause
+* Check for safety first
 
 
 ================================
